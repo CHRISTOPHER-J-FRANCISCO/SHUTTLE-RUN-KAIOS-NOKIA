@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUTTLE RUNS</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+
+    <style>
+        .focusable {
+            outline: none;
+        }
+        .focusable:focus {
+            outline: 2px solid #4CAF50; /* Visual focus indicator */
+            background-color: #f0f0f0; /* Slightly change background color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SHUTTLE RUNS</h1>
+        <div id="countdown-display">0</div>
+        <div id="timer-settings">
+            <button id="decrease-button" class="focusable" tabindex="0">-</button>
+            <span id="duration-display">0</span> seconds
+            <button id="increase-button" class="focusable" tabindex="0">+</button>
+        </div>
+        <button id="start-button" class="focusable" tabindex="0">START</button>
+        <div id="count-display">TOTAL SHUTTLE RUNS: <span id="count">0</span></div>
+        <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
